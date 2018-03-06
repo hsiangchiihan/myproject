@@ -4,7 +4,12 @@ public class Cat {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-    int a;
+       public String name;
+	   public int age;
+	   private String ownername;
+	   
+	   
+	   
 	}
 
 }
