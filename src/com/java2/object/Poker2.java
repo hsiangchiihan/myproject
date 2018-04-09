@@ -19,8 +19,39 @@ public class Poker2 {
         deal_cards.add(cards.get(randomnum));   
         cards.remove(randomnum);    
       }
-    
+    int pai=0;
+    String flower = "";
+    String paiarr[] = {"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
+    String pai_no="";
+    for (int i=0; i < deal_cards.size() ; i++ ){  
+        pai = deal_cards.get(i);  
+      if(pai >= 1 && pai <= 13){  
+        flower = "S"; 
+        pai_no = paiarr[pai];
+      }
+      if(pai >= 14 && pai <= 26){
+        flower = "H"; 
+        pai_no = paiarr[pai - 13];
+      }
+      if(pai >= 27 && pai <= 39){
+        flower = "D"; 
+        pai_no = paiarr[pai - 26];
+      }  
+      if(pai >= 40 && pai <= 52){
+        flower = "C"; 
+        pai_no = paiarr[pai - 39];
+      }
+      
+      if((i % 13) == 0 && i != 0)
+        System.out.print("\n");
+      
+      if((i % 13) == 0)
+        System.out.print("ª±®a" + ((i / 13)  + 1) + "ªºµP :  \t");
+ 
+      System.out.print(flower + pai_no+"\t");  
     }
-}
+	}	
+    }
+
 
 
