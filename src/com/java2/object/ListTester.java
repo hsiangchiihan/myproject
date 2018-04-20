@@ -13,10 +13,13 @@ public class ListTester {
     cards.add(3);
     cards.add(5);
     cards.set(1,99);
-    System.out.println("Removing number:" +cards.remove(0));
-    System.out.println(cards.size());
-    System.out.println(cards.get(2));
+    int num=cards.size();
+    //System.out.println("Removing number:" +cards.remove(0));
+    System.out.println("共有"+num+"個");
+    System.out.println("位置第二數為:"+cards.get(2));
     
+    for(int i=0;i<num;i++)
+    System.out.println(cards.get(i));
 	}
 
 }
