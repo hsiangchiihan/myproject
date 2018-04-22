@@ -15,8 +15,8 @@ public class ListTester {
     cards.set(1,99);
     int num=cards.size();
     //System.out.println("Removing number:" +cards.remove(0));
-    System.out.println("¦@¦³"+num+"­Ó");
-    System.out.println("¦ì¸m²Ä¤G¼Æ¬°:"+cards.get(2));
+    System.out.println("ç¸½å…±æœ‰"+num+"å€‹");
+    System.out.println("ç¬¬äºŒä½ç½®çš„æ•¸ç‚º:"+cards.get(2));
     
     for(int i=0;i<num;i++)
     System.out.println(cards.get(i));

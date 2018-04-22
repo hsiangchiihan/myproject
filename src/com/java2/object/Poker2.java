@@ -1,15 +1,15 @@
 package com.java2.object;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class Poker2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-    Random random = new Random();
-    ArrayList<Integer> cards = new ArrayList<>();
-    ArrayList<Integer> deal_cards =new ArrayList<>();    
+    List<Integer> cards = new ArrayList<>();
+    List<Integer> deal_cards =new ArrayList<>();    
     int randomnum =0;
     for (int j=0; j < 52 ; j++ ){    
         cards.add(j+1);
@@ -46,7 +46,7 @@ public class Poker2 {
         System.out.print("\n");
       
       if((i % 13) == 0)
-        System.out.print("ª±®a" + ((i / 13)  + 1) + "ªºµP :  \t");
+        System.out.print("çŽ©å®¶" + ((i / 13)  + 1) + "çš„ç‰Œ :  \t");
  
       System.out.print(flower + pai_no+"\t");  
     }
