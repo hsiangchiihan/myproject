@@ -11,7 +11,8 @@ public class ABgametext {
 		String subject="";
 		for(int i=0;i<4;i++) subject+=(int)(Math.random()*10); 
 		
-		//System.out.println("random: "+subject);
+		System.out.println("random: "+subject);
+		int round =1;
 		while(true){
 			int a=0,b=0;
 			boolean check[]=new boolean[4];
@@ -22,6 +23,7 @@ public class ABgametext {
 				if(subject.charAt(i)==guess.charAt(i)){
 					a++;
 					check[i]=true;
+					
 				}
 			}
 			
@@ -29,18 +31,20 @@ public class ABgametext {
 				for(int j=0;j<4;j++){
 					if(!check[j] && subject.charAt(j)==guess.charAt(i)){
 						b++;
-						check[j]=true;
+						check[j]=true;				
 						break;
 					}
 				}
 			}
 			
 			if(a==4){
-				System.out.println("Correct");
+				System.out.println("Correct!"+" "+"The answer is:"+subject);
+				System.out.println("You tried "+""+round+""+" rounds");				
 				break;
 			}
 			else{
 				System.out.println(a+"A"+b+"B");
+				round++;
 			}
 		}
 	}
