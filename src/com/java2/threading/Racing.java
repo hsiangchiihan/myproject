@@ -20,6 +20,7 @@ public class Racing {
     	h2.join();
     	h3.join();
     }catch (InterruptedException e){
+    	// TODO Auto-generated catch block
     	e.printStackTrace();
     }
     //Horse h2 =new Horse();
