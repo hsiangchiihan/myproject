@@ -3,10 +3,11 @@ package com.bruce;
 import java.util.Scanner;
 
 public class Practice5
+/*有例外處理的販賣機*/
 {
-	private String coffee="咖啡";
-	private String coke="可乐";
-	private String tea="茶";
+	private String coffee="coffee";
+	private String coke="Coke";
+	private String tea="tea";
 	private double coffeeprice=2.00;
 	private double cokeprice=3.00;
 	private double teaprice=5;

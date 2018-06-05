@@ -1,7 +1,7 @@
 package com.bruce;
 
 import java.util.Scanner;
-
+/*陽春版本販賣機*/
 class Coins{//硬幣類別
     private int one;
     private int five;
