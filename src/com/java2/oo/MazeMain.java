@@ -36,9 +36,13 @@ public class MazeMain {
 		// TODO Auto-generated method stub
 		new MazeMain();
 		ArrayList<Integer> numList = new ArrayList<Integer>(); 
-		for(int i = 1; i<= 5; i++){ 
-		numList.add(i+5); 
-		} 
+		for(int i = 1; i<= 9; i++){
+			if(i%2 == 0){
+				
+			}else{
+		numList.add(i); 
+		         } 
+		}
 		new Randomnum(numList).selectRandom(); 
 		} 
 	}
