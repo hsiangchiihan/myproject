@@ -14,8 +14,9 @@ public class Tester1 {
     String s = "abc";
     Integer i = new Integer(a);
     
-    
-    
+    String aa ="5";
+    int aaa =Integer.parseInt(aa);
+    System.out.println(aaa-2);
 	}
 
 }
