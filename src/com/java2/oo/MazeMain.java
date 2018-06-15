@@ -17,12 +17,12 @@ public class MazeMain {
 		String tokens[] =line.split(",");
 		int col =Integer.parseInt(tokens[0]);
 		int row	=Integer.parseInt(tokens[1]);
-		for(int i=0;i<col;i++){
-			
-		}
-		for(int j=0;j<row;j++){
-			
-		}
+		int m[][] = new int[col][row];
+		/*for(int i=0;i<col;i++){		
+			for(int j=0;j<row;j++){
+				
+			}
+		}	*/						
 	} catch (FileNotFoundException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
@@ -34,6 +34,7 @@ public class MazeMain {
  
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
 		new MazeMain();
 		ArrayList<Integer> numList = new ArrayList<Integer>(); 
 		for(int i = 1; i<= 9; i++){
