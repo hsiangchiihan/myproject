@@ -1,12 +1,12 @@
 package com.java2.schedule;
 
 public class Course {
-	int id;
+	String id;
     String name;
     int week;
     int time;
     int hours;
-    public Course(int id,String name,int week,int time, int hours){
+    public Course(String id,String name,int week,int time, int hours){
     	super();
     	this.id =id;
     	this.name =name;
@@ -14,10 +14,17 @@ public class Course {
     	this.time =time;
     	this.hours =hours;   	
     }
-	public int getId() {
+    
+    public boolean isAvailable(int week ,int time){
+		
+    	return avail ;
+    	
+    }
+    
+	public String getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	public String getName() {
