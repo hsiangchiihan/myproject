@@ -48,8 +48,9 @@ public class Main {
 		int time =Integer.parseInt(tokens[3]);
 		int hours =Integer.parseInt(tokens[4]);
 		
-		st.pickCourse();
+		
 		}
+		st.pickCourse();
 	} catch (FileNotFoundException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
