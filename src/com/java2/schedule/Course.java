@@ -15,11 +15,11 @@ public class Course {
     	this.hours =hours;   	
     }
     
-    public boolean isAvailable(int week ,int time){
+   // public boolean isAvailable(int week ,int time){
 		
-    	return avail ;
+    //	return avail ;
     	
-    }
+   // }
     
 	public String getId() {
 		return id;

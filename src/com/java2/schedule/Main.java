@@ -6,6 +6,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 
+import com.java2.oo.Drink;
+
 /* 有一文字檔儲存課表資料(schedule.txt)
        請讀取資料後，設計程式可檢查是否有空檔
        如:
@@ -18,7 +20,7 @@ import java.util.Scanner;
 */
 public class Main {
     public Main(){
-    	
+    	readCourses();
     	Scanner sc =new Scanner(System.in);
     	System.out.println("請輸入星期(1-7):");
     	int week =sc.nextInt();
@@ -32,10 +34,8 @@ public class Main {
     		}
     	}
     }
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub		
-		ScheduleText st =new ScheduleText();
-		
+	
+	public void readCourses(){
 	   try {
 		FileReader fr =new FileReader("schedule.txt");
 		BufferedReader in =new BufferedReader(fr);
@@ -47,8 +47,7 @@ public class Main {
 		int week =Integer.parseInt(tokens[2]);
 		int time =Integer.parseInt(tokens[3]);
 		int hours =Integer.parseInt(tokens[4]);
-		
-		
+		st.courses.add(new Course(id,name,week,time,hours));
 		}
 		st.pickCourse();
 	} catch (FileNotFoundException e) {
@@ -60,5 +59,8 @@ public class Main {
 	}
 	   
 	}
-
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub		
+		ScheduleText st =new ScheduleText();
+	}
 }
