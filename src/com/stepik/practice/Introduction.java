@@ -1,5 +1,6 @@
 package com.stepik.practice;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Introduction {
@@ -20,6 +21,8 @@ public class Introduction {
 	     int n =sc.nextInt();
 	     System.out.println((n / 10) % 10);*/
 		
+		int num = (int)(Math.random()*6)+1;
+		System.out.println(num);
 	}
 
 }
