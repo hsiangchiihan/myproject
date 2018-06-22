@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ScheduleText {
-    int total =0;
+    int total =0;  
     List<Course> courses = new ArrayList<>();
- 
+    
     public void pickCourse(){
 		System.out.println("Please enter course number: ");
 		for (int i=0;i<courses.size();i++){

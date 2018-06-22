@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import com.java2.oo.Drink;
@@ -18,8 +20,9 @@ import com.java2.oo.Drink;
        請輸入時(0-24):14
    [有課: C004 English 到16時]
 */
-public class Main {
+public class Main {	
     public Main(){
+    	List<Course> courses = new ArrayList<>();//目前還無法共用同一個List
     	readCourses();
     	Scanner sc =new Scanner(System.in);
     	System.out.println("請輸入星期(1-7):");
@@ -31,11 +34,12 @@ public class Main {
     		if(!c.isAvailable(week, time)){
     			System.out.println("[有課:"+c.getId()+" "+c.getName()+ (c.getTime()+c.getWeek())+"時]");
     			
-    		}
-    	}
+    		}    		
+    	}    	
     }
-	
+
 	public void readCourses(){
+		ScheduleText st =new ScheduleText();
 	   try {
 		FileReader fr =new FileReader("schedule.txt");
 		BufferedReader in =new BufferedReader(fr);
