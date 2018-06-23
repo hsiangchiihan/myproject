@@ -6,11 +6,7 @@ import java.util.Scanner;
 
 
 
-public class VendingMachine {
-		
-	int total =0;
-	List<Drink> drinks =new ArrayList<>();
-				
+public class VendingMachine {							
 	/*public int getShopping (int i,double p){
 		Scanner scanner =new Scanner(System.in);		
 		int coins =0;
@@ -50,6 +46,8 @@ public class VendingMachine {
 		}	
 		return coins;
 	}*/
+	int total =0;
+	List<Drink> drinks =new ArrayList<>();
 	public void on(){
 		System.out.println("Please insert coins: ");
 		for (int i=0;i<drinks.size();i++){

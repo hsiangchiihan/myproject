@@ -21,8 +21,25 @@ public class Introduction {
 	     int n =sc.nextInt();
 	     System.out.println((n / 10) % 10);*/
 		
-		int num = (int)(Math.random()*6)+1;
-		System.out.println(num);
+		/*int num = (int)(Math.random()*6)+1;
+		System.out.println(num);*/
+		
+		/*for(int i = 1 ; i< 10 ; i++){
+		      for(int j = 1 ; j <10 ; j++){
+		         System.out.print(""+i+"*"+j+"="+(i*j)+"\t");		         
+		   }
+		      System.out.println();
+		  }*/
+		
+		for(int k =0;k<9;k += 3){
+			for(int j=1;j<10;j++){
+				for(int i=1; i<4; i++){
+					System.out.printf("%d * %d = %d \t" , i + k , j , j * ( i + k ));
+				}
+				System.out.println();
+			}
+			System.out.println();
+		}		
 	}
 
 }

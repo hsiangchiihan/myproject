@@ -30,8 +30,8 @@ public class NumberMain {
 	                myList.add(tempArray[i]);
 	         }
 	    }	  
-	       //這邊的除3,和矩陣的宣告大小,其實就是上面講的 "tempArray.length"這個值來做決定的
-	       //y小於3,也是從"tempArray.length"的概念來的
+	       //這邊的除10,和矩陣的宣告大小,其實就是上面講的 "tempArray.length"這個值來做決定的
+	       //y小於10,也是從"tempArray.length"的概念來的
 	    int k = myList.size()/10;
 	    int count=0;
 	    double[][] trans_array = new double[k][10];        
