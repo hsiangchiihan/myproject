@@ -18,7 +18,7 @@ public class NumberMain {
 		BufferedReader in =new BufferedReader(fr);						
 		String line,tempstring;
 	    String[] tempArray= new String[10];
-	    ArrayList myList = new ArrayList<>();
+	    ArrayList<String> myList = new ArrayList<String>();
 	    int i=0;
 	    while((line = in.readLine())!=null){
 	           //br.readLine()讀取txt檔的每一行資料,把讀到的資料存到line	           

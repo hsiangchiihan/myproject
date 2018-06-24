@@ -44,13 +44,32 @@ public class Main {
 		FileReader fr =new FileReader("schedule.txt");
 		BufferedReader in =new BufferedReader(fr);
 		String line =in.readLine();
-		while (line != null){
-		String[] tokens =line.split(",");
-		String id =tokens[0];
-		String name =tokens[1];
-		int week =Integer.parseInt(tokens[2]);
-		int time =Integer.parseInt(tokens[3]);
-		int hours =Integer.parseInt(tokens[4]);
+		System.out.println("請輸入星期(1-7):");
+		Scanner s1 =new Scanner(System.in);
+		int w =s1.nextInt();
+		System.out.println("請輸入時(0-24)");
+		Scanner s2 =new Scanner(System.in);
+		int t =s2.nextInt();
+		
+		for(int i=0;i<line.length();i++){
+			line =in.readLine();
+		    String[] tokens =line.split(",");
+		    String id =tokens[0];
+		    String name =tokens[1];
+		    int week =Integer.parseInt(tokens[2]);
+		    int time =Integer.parseInt(tokens[3]);
+		    int hours =Integer.parseInt(tokens[4]);
+		    Course c =new Course(id,name,week,time,hours);
+		
+		if(c.week == w){
+			if(c.time <= t &&t <=(c.time+c.hours)){
+				System.out.println("[有課:" + id + " " + name + " 到" + (time + hours) + "時]");
+				break;
+			}else{
+				System.out.println("[有空檔]");
+				break;
+			}
+		}
 		st.courses.add(new Course(id,name,week,time,hours));
 		}
 		st.pickCourse();
@@ -66,5 +85,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub		
 		ScheduleText st =new ScheduleText();
+		Main m =new Main();
+		m.readCourses();
 	}
 }
