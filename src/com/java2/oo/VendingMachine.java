@@ -68,7 +68,7 @@ public class VendingMachine {
 				change =coins-25;
 				System.out.println("You chose Coke.");
 				System.out.println("To give change"+change);
-				data++;
+				data =0;
 				break;
 				
 			case 2:
@@ -76,14 +76,14 @@ public class VendingMachine {
 				change1 =coins-30;
 	    		System.out.println("You chose Juice.");
 	    		System.out.println("To give change"+change1);
-	    		data++;
+	    		data =0;
 	    		break;
 	    	case 3:
 	    		int change2 =0;
 				change2 =coins-20;
 	    		System.out.println("You chose Sprite.");
 	    		System.out.println("To give change"+change2);
-	    		data++;
+	    		data =0;
 	    		break;
 			case 0:
 				break;
