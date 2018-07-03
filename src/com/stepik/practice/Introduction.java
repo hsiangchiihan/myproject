@@ -31,7 +31,7 @@ public class Introduction {
 		      System.out.println();
 		  }*/
 		
-		for(int k =0;k<9;k += 3){
+		/*for(int k =0;k<9;k += 3){
 			for(int j=1;j<10;j++){
 				for(int i=1; i<4; i++){
 					System.out.printf("%d * %d = %d \t" , i + k , j , j * ( i + k ));
@@ -39,7 +39,18 @@ public class Introduction {
 				System.out.println();
 			}
 			System.out.println();
-		}		
+		}	*/
+		
+		/*Scanner scanner =new Scanner(System.in);
+		int answer =scanner.nextInt();
+		System.out.println(answer/10);*/
+		
+		Scanner scanner =new Scanner(System.in);
+		int ans =scanner.nextInt();
+		int hun =ans/100;
+		int ten =(ans/10)%10;
+		int one =((ans%100)*100)%10;
+		System.out.println(hun+ten+one);
 	}
 
 }
