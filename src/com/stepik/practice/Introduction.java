@@ -68,11 +68,36 @@ public class Introduction {
 		/*DecimalFormat formatter = new DecimalFormat("#.#");
 		System.out.println(formatter.format(0.9));*/
 
-	    Scanner scanner = new Scanner(System.in);
+	    /*Scanner scanner = new Scanner(System.in);
 	    double d = Math.abs(scanner.nextDouble());
 	    d = Math.floor(d*10);
 	    String s = Integer.toString((int)d);
-	    System.out.println(s.charAt(s.length()-1));
+	    System.out.println(s.charAt(s.length()-1));*/
+	    
+	    /*Scanner sc =new Scanner(System.in);
+	    double ans =sc.nextDouble();
+	    System.out.println(((ans*ans*ans)+(ans*ans)+ans)+1);*/
+	    
+	    /*double floor = Math.floor(1.25);
+	    double ceil = Math.ceil(5.15);
+	    double a = 3, b = 4;
+	    double c = Math.hypot(a, b);
+	    System.out.println(c);*/
+	    /*
+	    char ch = 65;
+	    System.out.println(ch);  //Print:A
+	    
+	    char c1 = 'A' + 32;
+	    int c2 = 'A' + 32;
+	    System.out.println(c1);  //Print:a
+	    System.out.println(c2);  //Print:97
+	    */
+		
+		 long l = Integer.MAX_VALUE; 
+		 int i = l;   //explicit casting is required
+		 char ch = i; //explicit casting is required
+		 double d = ch; 
+		 float f = d; //explicit casting is required
 	}
 	/*public static int getDecimalBits2(double target) {
 	    if (0.0 == target % 1) {
