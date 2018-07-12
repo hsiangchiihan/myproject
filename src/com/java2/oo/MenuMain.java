@@ -57,7 +57,8 @@ public class MenuMain {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	new MenuMain();
+	MenuMain main =new MenuMain();
+	main.readMenus();
 	}
 
 }
